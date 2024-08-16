@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "297ee898-7df8-404d-8d4e-f99ecbf0aec5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28327085",
+		"_collection_link": "https://www.postman.com/spacecraft-pilot-37665136/workspace/ptsei-test/collection/28327085-297ee898-7df8-404d-8d4e-f99ecbf0aec5?action=share&source=collection_link&creator=28327085"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/lokasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"namaLokasi\": \"PT Sei\",\r\n    \"negara\": \"Indonesia\",\r\n    \"provinsi\": \"Provinsi\",\r\n    \"kota\": \"Bandung\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/lokasi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"namaLokasi\": \"PT Sei\",\r\n    \"negara\": \"Indonesia\",\r\n    \"provinsi\": \"Provinsi\",\r\n    \"kota\": \"Bandung\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/lokasi/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/lokasi/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"namaLokasi\": \"Jl usman Padasuka\",\r\n    \"negara\": \"Indonesia\",\r\n    \"provinsi\": \"Jawa Barat\",\r\n    \"kota\": \"Bandung\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/proyek",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_proyek\": \"Fullstak Development\",\r\n    \"client\": \"PT SEI\",\r\n    \"keterangan\": \"PT yang berdiri dari pt len\",\r\n    \r\n    \"pimpinanProyek\": \"Ade\",\r\n    \"tglMulai\": \"2024-08-15T09:00:00\",\r\n    \"tglSelesai\": \"2024-12-15T18:00:00\",\r\n    \"lokasi\" : [{\"id\": 11,\r\n            \"namaLokasi\": \"JL Asia Afrika\",\r\n            \"negara\": \"Indonesia\",\r\n            \"provinsi\": \"Jawa Barat\",\r\n            \"kota\": \"Bandung\"\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proyek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proyek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/proyek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_proyek\": \"Fullstak Development\",\r\n    \"client\": \"PT SEI\",\r\n    \"keterangan\": \"PT yang berdiri dari pt len\",\r\n    \r\n    \"pimpinanProyek\": \"Ade\",\r\n    \"tglMulai\": \"2024-08-15T09:00:00\",\r\n    \"tglSelesai\": \"2024-12-15T18:00:00\",\r\n    \"lokasi\" : [{\"id\": 11,\r\n            \"namaLokasi\": \"JL Asia Afrika\",\r\n            \"negara\": \"Indonesia\",\r\n            \"provinsi\": \"Jawa Barat\",\r\n            \"kota\": \"Bandung\"\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proyek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proyek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/proyek",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_proyek\": \"Fullstak Development\",\r\n    \"client\": \"PT SEI\",\r\n    \"keterangan\": \"PT yang berdiri dari pt len\",\r\n    \r\n    \"pimpinanProyek\": \"Ade\",\r\n    \"tglMulai\": \"2024-08-15T09:00:00\",\r\n    \"tglSelesai\": \"2024-12-15T18:00:00\",\r\n    \"lokasi\" : [{\"id\": 11,\r\n            \"namaLokasi\": \"JL Asia Afrika\",\r\n            \"negara\": \"Indonesia\",\r\n            \"provinsi\": \"Jawa Barat\",\r\n            \"kota\": \"Bandung\"\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proyek/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proyek",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/proyek",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"namaProyek\": \"Fullstak Development\",\r\n    \"client\": \"PT SEI\",\r\n    \"keterangan\": \"PT yang berdiri dari pt len\",\r\n    \r\n    \"pimpinanProyek\": \"Ade\",\r\n    \"tglMulai\": \"2024-08-15T09:00:00\",\r\n    \"tglSelesai\": \"2024-12-15T18:00:00\",\r\n    \"lokasi\" : [{\"id\": 11,\r\n            \"namaLokasi\": \"JL Asia Afrika\",\r\n            \"negara\": \"Indonesia\",\r\n            \"provinsi\": \"Jawa Barat\",\r\n            \"kota\": \"Bandung\"\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proyek/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proyek",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
